@@ -2,7 +2,7 @@ import { ethers } from 'ethers'
 import { useState } from 'react';
 import './App.css'
 import Greeter from "./artifacts/contracts/Greeter.sol/Greeter.json"
-
+require('dotenv').config()
 
 const greeterAddress = "0x5fbdb2315678afecb367f032d93f642f64180aa3"
 
