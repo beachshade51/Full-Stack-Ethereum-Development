@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
     "@nomiclabs/hardhat-waffle": "^2.0.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -13,6 +13,7 @@
     "ethers": "^5.7.2",
     "hardhat": "^2.12.7",
     "install": "^0.13.0",
+    "node-polyfill-webpack-plugin": "^2.0.1",
     "npm": "^9.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -42,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.2"
   }
 }
