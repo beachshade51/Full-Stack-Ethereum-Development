@@ -34,4 +34,12 @@ describe('Token', function() {
       expect(await token.balanceOf(user.address)).to.equal(0);
    })
 
+   it('should transfer correctly', async function(){
+      //Transfer 100 tokens from owner to user
+      const amount = 100
+      const event = await token.transfer(user.address, amount);
+      expect(await token.balanceOf(user.address)).to.equal(amount);
+      expect(await token.balanceOf(owner.address)).to.equal(999900);
+   })
+
 });

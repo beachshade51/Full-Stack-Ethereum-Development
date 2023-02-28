@@ -10,6 +10,8 @@ contract Token {
         balances[msg.sender] = totalSupply;
     }
 
+    event Transfer(address indexed _from, address indexed _to, uint256 _value);
+
     function transfer(address to, uint256 amount) external {
         require(balances[msg.sender] >= amount, "not enough token");
         balances[msg.sender] -= amount;
